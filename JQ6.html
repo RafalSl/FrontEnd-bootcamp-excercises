@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Szósty skrypt JQuerry</title> 
+	<script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$("#obrazek").css({position: 'relative'});
+			$("#obrazek").click(function() {
+				$(this).animate({left: "1200px"}, 15000, "easeOutBounce");
+				});
+		});
+	</script>
+</head>
+<body>
+	<img src="death.png" id="obrazek">
+
+</body>
+</html>

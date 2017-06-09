@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8" />
+	<meta name="Programowanie" content="Programowanie Back End" />
+	<title>Formularz</title>
+</head>
+<body>
+	<form action = ''>
+		<input name='Imię' type='text'>
+		<input type='submit' value='OK'>
+	</form>
+</body>
+</html>

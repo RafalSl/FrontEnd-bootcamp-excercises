@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>przykład jquery</title>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+
+      <script>
+          $(function () {
+              $("#menu li").mouseenter(function() {
+                  $(this).animate({
+                      color: "red"
+                  },3000);
+              }).mouseleave(function() {
+                  $(this).animate({
+                      color: "black"
+                  });
+              });
+          });
+      </script>
+   </head>
+   <body>
+      <div id="menu">
+          <ul>
+              <li>Polikarp Bugielski</li>
+              <li>Edward Chądzyński</li>
+              <li>Władysław Kononowicz</li>
+              <li>Aleksander Szaniawski</li>
+              <li>Józef Oxiński</li>
+              <li>Tomasz Kolbe</li>
+              <li>Dionizy Czachowski</li>
+          </ul>
+          </ul>
+      </div>
+   </body>
+</html>
+
+

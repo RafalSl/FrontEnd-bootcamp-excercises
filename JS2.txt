@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Drugi skrypt JS</title> 
+	<script type="text/javascript"> 
+	
+	</script>
+</head>

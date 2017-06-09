@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Piąty skrypt JQuerry</title> 
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+	<script>
+			/*$(function () {
+				$("#liczby li").mouseenter(function() {
+					$(this).css(
+						"color", "red"
+						);
+					}).mouseleave(function() {
+					$(this).css(
+						"color", "black"
+						);
+					});
+			});
+			*/
+			/*
+			$(function () {
+				$("#liczby li").mouseenter(function(){
+				$(this).animate({
+						color: "yellow"
+						}, 2000);
+				}).mouseleave(function() {
+				$(this).animate({color: "black"}, 2000);
+				});
+			});
+			*/
+			$(function () {
+              $("#liczby li").mouseenter(function() {
+                  $(this).animate({
+                      color: "red"
+                  },3000);
+              }).mouseleave(function() {
+                  $(this).animate({
+                      color: "black"
+                  });
+              });
+          });
+
+	</script>
+</head>
+<body>
+<div id="liczby">
+	<ul>
+		<li>1aaaaaa</li>
+		<li>2aaaaaa</li>
+		<li>3aaaaaa</li>
+		<li>4aaaaaa</li>
+		<li>5aaaaaa</li>
+	</ul>
+</div>
+
+	
+
+</body>
+</html>

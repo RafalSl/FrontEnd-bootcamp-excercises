@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Trzeci skrypt JS</title> 
+	<script type="text/javascript"> 
+	
+	</script>
+</head>
+<body>
+	<p>FE46</p>
+	<img class="obrazek" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Face-smile.svg/200px-Face-smile.svg.png" onmouseover="this.src='https://seeklogo.com/images/D/Death-logo-E0CD34C4C8-seeklogo.com.gif'" onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Face-smile.svg/200px-Face-smile.svg.png'" >
+	<img class="obrazek" src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0012/8883/brand.gif?itok=l0jtlcEf" onmouseover="this.src='https://seeklogo.com/images/D/Death-logo-E0CD34C4C8-seeklogo.com.gif'" onmouseout="this.src='https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0012/8883/brand.gif?itok=l0jtlcEf'" >
+	<img class="obrazek" src="http://rs828.pbsrc.com/albums/zz206/cahisisolo/smiling.gif~c200" onmouseover="this.src='https://seeklogo.com/images/D/Death-logo-E0CD34C4C8-seeklogo.com.gif'" onmouseout="this.src='http://rs828.pbsrc.com/albums/zz206/cahisisolo/smiling.gif~c200'" >
+	<img class="obrazek" src="https://wordassociations.net/image/200x/svg_to_png/nicubunu_Emoticons_Simple_face.png" onmouseover="this.src='https://seeklogo.com/images/D/Death-logo-E0CD34C4C8-seeklogo.com.gif'" onmouseout="" >
+	
+	<p>FE47</p>
+	<img id="kostka" src="kostka_1.png" onclick="this.src=losowanie()">
+	
+	<img id="kostka" src="kostka_1.png" onclick="this.src='kostka_'+(Math.floor(Math.random()*6)+1)+'.png'">
+	
+	<script>
+		function losowanie(){
+			var liczba = (Math.floor(Math.random()*6)+1);
+			return 'kostka_'+liczba+'.png';
+		}
+	</script>
+	
+	<p>FE48 + FE49</p>
+	<p id="ptaki"> </p>
+	<input type="button" value="Napisz kura" onclick="javascript:kura()"/>
+	<input type="button" value="Napisz kogut" onclick="javascript:kogut()"/>
+	<input type="button" value="Reset" onmouseenter="javascript:reset()"/>
+	
+	<script>
+		function kura(){
+			document.getElementById("ptaki").innerHTML += " Kura";
+		}
+		
+		function kogut(){
+			document.getElementById("ptaki").innerHTML += " Kogut";
+		}
+		
+		function reset(){
+			document.getElementById("ptaki").innerHTML = "";
+		}
+	</script>
+	
+	<p>FE51</p>
+	<p id="kolor"> Napis koloru... </p>
+	<input type="button" value="czerwonego" onclick="javascript:czerwony()"/>
+	<input type="button" value="zielonego" onclick="javascript:zielony()"/>
+	<input type="button" value="niebieskiego" onclick="javascript:niebieski()"/>
+	
+	<script>
+		function czerwony(){
+			document.getElementById("kolor").innerHTML = "Napis koloru czerwonego";
+			document.getElementById("kolor").style.color = "red";
+		}
+		
+		function zielony(){
+			document.getElementById("kolor").innerHTML = "Napis koloru zielonego";
+			document.getElementById("kolor").style.color = "green";
+		}
+		
+		function niebieski(){
+			document.getElementById("kolor").innerHTML = "Napis koloru niebieskiego";
+			document.getElementById("kolor").style.color = "blue";
+		}
+	</script>
+	
+	<p>FE52</p>
+	
+	<div id="pasek" style='height: 20px; width: 10px; background-color: black;' onclick="javascript:dodaj()"></div>
+	<script>
+		var szerokosc = 10;
+		function dodaj(){
+			szerokosc += 10;
+			document.getElementById("pasek").style.width = '' + szerokosc + '%';
+		}
+	</script>
+	
+	<div id="kwadrat" style='height: 20px; width: 20px; background-color: black;' onclick="javascript:poszerz()"></div>
+	<script>
+		var bok = 20;
+		function poszerz(){
+			bok += 10;
+			document.getElementById("kwadrat").style.width = '' + bok + 'px';
+			document.getElementById("kwadrat").style.height = '' + bok + 'px';
+		}
+	</script>
+	<br><br>
+	
+	<form onsubmit='javascript:return(waliduj())'>
+		PESEL: <input type='text' name='pesel' id='pesel'><br>
+		Kod pocztowy: <input type='text' name='kod' id='kod'>
+		<input type='submit'>
+	</form>
+	<script>
+		function waliduj(){
+			if (document.getElementById('pesel').value.match(/^[0-9]{11}$/) == null) {alert('Popraw PESEL'); return false;};
+			if (document.getElementById('kod').value.match(/^[0-9][0-9]-[0-9][0-9][0-9]$/) == null) {alert('Popraw kod pocztowy'); return false;}
+		}
+	</script>
+	
+	
+	
+	
+	
+<!--
+<div>
+	<p> FE43 FE44</p>
+	<img class="obrazek" src="wiosna.jpg" onmouseover="javascript:licznik++" onmouseout="javascript:licznik2++" onclick="javascript:licz(); adres(src)">
+	<img class="obrazek" src="http://www.clickgratis.com.br/fotos-imagens/foto/aHR0cDovL3d3dy5jbGlja2dyYXRpcy5jb20uYnIvZm90b3MtaW1hZ2Vucy9mb3RvL2FIUjBjRG92TDNkM2R5NWpiR2xqYTJkeVlYUnBjeTVqYjIwdVluSXZabTkwYjNNdGFXMWhaMlZ1Y3k5bWIzUnZMMkZJVWpCalJHOTJUREpWZDAxNU1XeGlSekV4WW0xU2RreHVWbXhaTWxKMVRHMVdla3d5Um5wak1sWXdZM2s1ZEdSWGVEQmhWekZzV2tkc2FFd3liSFJaVjJSc1ltMVdla3g2U1hkTlZGVjJUVlJGZGsxVVRYWk5WRkV3VG5wUmVrMUVRWGhPVkdONlRVUkpkV0Z1UW00dWFuQm4uanBn.jpg" onclick="javascript:adres(src)">
+	<script>
+		var licznik = 0;
+		var licznik2 = 0;
+		function adres(src){
+			alert(src);
+		}
+		
+		function licz(){
+			alert('Najechałeś ' + licznik + ' razy.\nZjechałeś ' + licznik2 + ' razy');
+			licznik = 0;
+			licznik2 = 0;
+		}
+	</script>
+</div>
+-->
+
+</body>
+</html>

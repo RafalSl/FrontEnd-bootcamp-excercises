@@ -1,0 +1,29 @@
+.formularz {
+	text-align: center;
+	background-color: #EDF4F2;
+	margin: 100px 50px 0 50px;
+	padding: 50px;
+	height: 480px;
+}
+
+.formularz h2 {
+	color: red;
+	font-weight: 800;
+	font-family: Helvetica sans-sherif;
+
+}
+
+input {
+	background-color: gray;
+	width: 250px;
+}
+
+#przycisk {
+	background-color: red;
+	width: 50px;
+}
+
+.foty {
+	float: right;
+	
+}

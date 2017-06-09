@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Drugi skrypt JS</title> 
+	<script type="text/javascript"> 
+	
+	</script>
+</head>
+<body>
+<!--	<h1 id="h1"> Head1 </h1>
+	
+	<h2 id="h2"> Head2 </h2>
+	
+	<p id="p"> Paragraf </p>
+	
+	<button onclick="javascript:h1()"> Head1Change </button>
+	<button onclick="h2()"> Head2Change </button>
+	<button onclick="p()"> PChange </button>
+-->	
+	<h1 id="h1" onclick="javascript:h1()"> Head1 </h1>
+	
+	<h2 id="h2" onclick="h2()"> Head2 </h2>
+	
+	<p id="p" onclick="p()"> Paragraf </p>
+	
+	<button onclick="javascript:h1()"> Head1Change </button>
+	<button onclick="h2()"> Head2Change </button>
+	<button onclick="p()"> PChange </button>
+	
+	<script>
+		function h1(){
+			document.getElementById("h1").innerHTML = "New Head1";
+		}
+		
+		function h2(){
+			document.getElementById("h2").innerHTML = "New Head2";
+		}
+		
+		function p(){
+			document.getElementById("p").innerHTML = "New Paragraf";
+		}
+	</script>
+</body>
+</html>

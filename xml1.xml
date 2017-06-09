@@ -1,0 +1,45 @@
+<?xml version=”1.0” encoding= "UTF-8"?>
+
+<rodzina>
+	<relacja opis = "mąż">
+		<imie> Adam </imie>
+		<nazwisko> Kowalski </nazwisko>
+	</relacja>
+	<relacja opis = "żona">
+		<imie> Anna </imie>
+		<nazwisko> Kowalska </nazwisko>
+	<relacja>
+</rodzina>
+
+<rodzina>
+	<człowiek relacja="tata">
+		<imie> Krzysztof </imie>
+		<nazwisko> Słomka </nazwisko>
+		<wiek> 59 </wiek>
+		<miasto> Kraków </miasto>
+	</człowiek>
+	<człowiek relacja = "mama">
+		<imie> Anna </imie>
+		<nazwisko> Słomka </nazwisko>
+		<wiek> 54 </wiek>
+		<miasto> Kraków </miasto>
+	</człowiek>
+</rodzina>
+
+<!-- Mak i niezpominajka -->
+<rośliny>
+	<rodzina opis = "makowate">
+		<rodzaj = "mak">
+			<liście opis = "pojedyncze"></liście>
+				<alpejski></alpejski>
+				<lekarski></lekarski>
+				<piaskowy></piaskowy>
+				<polny></polny>
+			
+				<syberyjski></syberyjski>
+			
+		</mak>
+	</makowate>
+	
+	
+</rośliny>
